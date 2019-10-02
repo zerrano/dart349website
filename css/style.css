@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i|Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway&display=swap');
 * {
     margin:0;
     padding:0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -16,12 +16,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: 'Oswald', sans-serif;
-}
-
-hgroup, h1, h2, #maintitle{
-  text-align: center;
-  color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 section {
@@ -30,7 +25,6 @@ section {
     position:relative;
     border:solid 20px #fff;
 }
-
 
 .textbox {
     padding:20px 40px;
@@ -49,53 +43,7 @@ section {
 
 }
 
-
 #s1 {
-    height: 100vh;
-    background: url(../images/page1.png) no-repeat fixed center center;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-#logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width:60px;
-}
-
-#s1 hgroup {
-    background:rgba(255, 255, 255, 1);
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-}
-
-#s1 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size:82px;
-    text-transform: uppercase;
-    color:#333;
-    font-weight: 700;
-/*
-    letter-spacing: -10px;
-    word-spacing: 20px;
-*/
-}
-
-
-#home hgroup{
-  font-family: 'Oswald', sans-serif;
-  font-size:50px;
-  text-transform: uppercase;
-  color:#333;
-  font-weight: 700;
-}
-
-#home {
     height: 100vh;
     background: url(../images/homebanner.jpg) no-repeat fixed center center;
     background-size: cover;
@@ -105,17 +53,56 @@ section {
     padding: 40px;
 }
 
+/*#logo {
+    position: fixed, absolute;
+    top: 20px;
+    left: 20px;
+    width:60px;
+}
+*/
+#s1 hgroup {
+    background:rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#s2 hgroup {
+    background:rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#s1 h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:82px;
+    text-transform: uppercase;
+    color:#333;
+    font-weight: 700;
+}
+#s2 h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:82px;
+    text-transform: uppercase;
+    color:#333;
+    font-weight: 700;
+}
 #s1 h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-style: italic;
     font-weight: 300;
     color:#555;
 }
-
+#s2 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color:#555;
+}
 #s2 {
     height: 100vh;
-    background: url(../images/bg2.jpg) no-repeat fixed center center;
+    background: url(../images/page1.png) no-repeat fixed center center;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
@@ -132,7 +119,7 @@ section {
 
 #s3 {
     height: 100vh;
-    background: url(../images/bg3.jpg) no-repeat fixed center center;
+    background: url(../images/page2.png) no-repeat fixed center center;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -146,4 +133,48 @@ section {
     background:#fff;
     padding: 20px;
 
+}
+
+#s4 {
+    height: 100vh;
+    background: url(../images/page3.png) no-repeat fixed center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+}
+
+#s4 article {
+    width:30%;
+    background:#fff;
+    padding: 20px;
+
+}
+.topnav {
+  background-color: #B34605;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #FFA570;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #FF9457;
+  color: white;
 }
