@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light&display=swap');
 * {
     margin:0;
     padding:0;
@@ -16,7 +16,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 section {
@@ -53,13 +53,6 @@ section {
     padding: 40px;
 }
 
-/*#logo {
-    position: fixed, absolute;
-    top: 20px;
-    left: 20px;
-    width:60px;
-}
-*/
 #s1 hgroup {
     background:rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -71,19 +64,32 @@ section {
     text-align: center;
 }
 #s1 h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size:82px;
-    text-transform: uppercase;
     color:#333;
     font-weight: 700;
 }
 #s2 h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size:82px;
-    text-transform: uppercase;
     color:#333;
     font-weight: 700;
 }
+
+#s3 h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size:82px;
+    color:#333;
+    font-weight: 700;
+  }
+
+  #s4 h1 {
+      font-family: 'Shadows Into Light', cursive;
+      font-size:82px;
+      color:#333;
+      font-weight: 700;
+    }
+
 #s1 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -98,12 +104,29 @@ section {
     font-weight: 300;
     color:#555;
 }
+
+#s3 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color:#555;
+}
+
+#s4 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color:#555;
+}
+
 #s2 {
     height: 100vh;
     background: url(../images/page1.png) no-repeat fixed center center;
     background-size: cover;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
 }
@@ -120,16 +143,17 @@ section {
     background: url(../images/page2.png) no-repeat fixed center center;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
 
 }
 
 #s3 article {
-    width:30%;
-    background:#fff;
-    padding: 20px;
+  width:30%;
+  background:#fff;
+  padding: 20px;
+  margin:20px;
 
 }
 
@@ -138,16 +162,17 @@ section {
     background: url(../images/page3.png) no-repeat fixed center center;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
 
 }
 
 #s4 article {
-    width:30%;
-    background:#fff;
-    padding: 20px;
+  width:30%;
+  background:#fff;
+  padding: 20px;
+  margin:20px;
 
 }
 .topnav {
@@ -173,6 +198,67 @@ section {
 
 
 .topnav a.active {
+  background-color: #FF9457;
+  color: white;
+}
+
+/* exercise page directory for all the other exercises */
+
+
+
+.rectangle {
+      width: 400px;
+      height: 300px;
+      background: brown;
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-align: : center;
+      padding: 20px;
+
+    }
+
+    .photo-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-grid {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.photo-grid-item {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  text-align: center;
+
+
+}
+
+a .rectangle{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+a:hover .rectangle{
+  background-color: #FFA570;
+  color: black;
+}
+
+
+a.active .rectangle{
   background-color: #FF9457;
   color: white;
 }
