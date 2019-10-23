@@ -9,33 +9,9 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-/* === NAV INFO HERE === */
-nav {
-	background:#333;
-    width:100%;
-	position: fixed;
-	top:0;
-	left: 0;
-	display:flex;
-}
-
-nav a:link {
-	color:#fff;
-	padding: 20px;
-	flex-grow:1;
-	text-align: center;
-    text-decoration: none;
-}
-
-nav a:hover {
-	color:#333;
-	background: #fff;
-}
-
-
 
 /* === WELCOME SCREEN === */
-#hero {
+#part1 {
     width:100%;
     min-height: 100vh;
     height:auto;
@@ -60,10 +36,10 @@ h1 a {
   color: black;
 }
 
-h1 a:hover {
+h1 a:hover{
   background: none;
   color: white;
-  transition: all 2.5s;
+  transition: 2.5s;
 }
 
 
@@ -80,17 +56,21 @@ h1 a:hover {
 .part_2 article {
     column-count: 1;
     text-align: center;
+      margin-top: 230px;
+
 }
 
 p, #wiki{
   color: black;
   font-size: 25px;
   font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
 p, #wiki, a {
   background: black;
   color: black;
+  transition: 0.7s;
 }
 
 p, #wiki, a:hover {
@@ -99,12 +79,11 @@ p, #wiki, a:hover {
   transition: 0.7s;
 }
 /* === SECTION 3 === */
-#annoying{
+#part_3{
     width:100%;
     min-height: 100vh;
     height:auto;
-    background-color: #FFE19E;
-    padding: 90px;
+    padding: 50px;
     justify-content: flex-start;
     column-count: 2;
     background:url(../images/socrates.png) no-repeat fixed center center;
@@ -112,44 +91,96 @@ p, #wiki, a:hover {
     scroll-snap-align: start;
 }
 
-
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 70px;
   text-align: center;
 }
-#pic1 {
-  padding: 30px;
-  display: block;
-  padding-left: 150px;
-}
-#annoying p {
-  padding: 30px;
-}
-.strange {
-    position: relative;
-    left:10%;
-    top:20px;
+div#gif {
+  justify-content: center;
+  align-items: center;
 }
 
-/* === FALL SECTION === */
-#fall {
+#gif:hover {
+  opacity: 0;
+  transition: 2s;
+}
+/* === SECTION 4 === */
+
+#part_4{
     width:100%;
     min-height: 100vh;
     height:auto;
-    background:url(../images/bg3.jpg) no-repeat fixed center center;
+    padding: 90px;
+    justify-content: center;
+    column-count: 2;
+    background:#FFDC81;
     background-size: cover;
-    padding: 40px;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-
+    scroll-snap-align: start;
 }
 
-#fall article {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    width:48%;
+#moodboard {
+  width: 100%;
+  min-height: 60vh;
+
+  background-size: cover;
+  position: absolute;
+}
+/* === SECTION 5 === */
+
+#part_5 {
+  width:100%;
+  min-height: 100vh;
+  height:auto;
+  padding: 90px;
+  padding-top: 100px;
+  justify-content: center;
+  column-count: 2;
+  background:url(../images/wiki.png) no-repeat fixed center center;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+.essay {
+  padding-top: 40px;
+}
+/* === SECTION 6 === */
+#part_6 {
+  width:100%;
+  min-height: 100vh;
+  height:auto;
+  padding: 90px;
+  padding-top: 100px;
+  justify-content: center;
+  column-count: 2;
+  background:url(../images/wiki.png) no-repeat fixed center center;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+/* === SECTION 7 === */
+#part_7 {
+  width:100%;
+  min-height: 100vh;
+  height:auto;
+  padding: 90px;
+  padding-top: 100px;
+  justify-content: center;
+  column-count: 2;
+  background:url(../images/china.png) no-repeat fixed center center;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+/* === CONCLUSION === */
+#part_8 {
+  width:100%;
+  min-height: 100vh;
+  height:auto;
+  padding: 90px;
+  padding-top: 100px;
+  justify-content: center;
+  column-count: 2;
+  background:url(../images/conclusion.png) no-repeat fixed center center;
+  background-size: cover;
+  scroll-snap-align: start;
 }
