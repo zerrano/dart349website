@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+/* === NAV INFO HERE === */
+nav {
+	background:#333;
+    width:100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	display:flex;
+}
+
+nav a:link {
+	color:#fff;
+	padding: 20px;
+	flex-grow:1;
+	text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+	color:#333;
+	background: #fff;
+}
+
+
+
+/* === WELCOME SCREEN === */
+#hero {
+    width:100%;
+    min-height: 100vh;
+    height:auto;
+    background:url(../images/bg1.jpg) no-repeat fixed center center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+#front, h1 {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 180px;
+
+}
+
+h1 a {
+  background: black;
+  color: black;
+}
+
+h1 a:hover {
+  background: none;
+  color: white;
+  transition: all 2.5s;
+}
+
+
+/* === WIKI SECTION === */
+.part_2 {
+    width:100%;
+    height:100vh;
+    padding:150px;
+    background:url(../images/wiki.png) no-repeat fixed center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+.part_2 article {
+    column-count: 1;
+    text-align: center;
+}
+
+p, #wiki{
+  color: black;
+  font-size: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p, #wiki, a {
+  background: black;
+  color: black;
+}
+
+p, #wiki, a:hover {
+  background: none;
+  color: black;
+  transition: 0.7s;
+}
+/* === SECTION 3 === */
+#annoying{
+    width:100%;
+    min-height: 100vh;
+    height:auto;
+    background-color: #FFE19E;
+    padding: 90px;
+    justify-content: flex-start;
+    column-count: 2;
+    background:url(../images/socrates.png) no-repeat fixed center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  text-align: center;
+}
+#pic1 {
+  padding: 30px;
+  display: block;
+  padding-left: 150px;
+}
+#annoying p {
+  padding: 30px;
+}
+.strange {
+    position: relative;
+    left:10%;
+    top:20px;
+}
+
+/* === FALL SECTION === */
+#fall {
+    width:100%;
+    min-height: 100vh;
+    height:auto;
+    background:url(../images/bg3.jpg) no-repeat fixed center center;
+    background-size: cover;
+    padding: 40px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#fall article {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width:48%;
+}
