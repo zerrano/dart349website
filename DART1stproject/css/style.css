@@ -114,7 +114,7 @@ div#gif {
     padding: 90px;
     justify-content: center;
     column-count: 2;
-    background:#FFDC81;
+    background:url(../images/mood.png) no-repeat fixed center center;;
     background-size: cover;
     scroll-snap-align: start;
 }
