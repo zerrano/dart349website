@@ -23,6 +23,7 @@ body {
     scroll-snap-align: start;
 }
 
+
 #front, h1 {
   font-family: 'Oswald', sans-serif;
   color: white;
@@ -111,7 +112,7 @@ div#gif {
     width:100%;
     min-height: 100vh;
     height:auto;
-    padding: 90px;
+    padding: 50px;
     justify-content: center;
     column-count: 2;
     background:url(../images/mood.png) no-repeat fixed center center;;
