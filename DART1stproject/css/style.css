@@ -80,7 +80,7 @@ p, #wiki, a:hover {
   transition: 0.7s;
 }
 /* === SECTION 3 === */
-#part_3{
+.part_3{
     width:100%;
     min-height: 100vh;
     height:auto;
