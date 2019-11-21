@@ -54,8 +54,7 @@ section {
 }
 
 #s1 hgroup {
-    background:rgba(255, 255, 255, 0.9);
-    padding: 20px;
+
     text-align: center;
 }
 #s2 hgroup {
@@ -66,8 +65,15 @@ section {
 #s1 h1 {
     font-family: 'Shadows Into Light', cursive;
     font-size:82px;
-    color:#333;
+    color:white;
     font-weight: 700;
+}
+#s1 h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color:white;
 }
 #s2 h1 {
     font-family: 'Shadows Into Light', cursive;
@@ -90,13 +96,6 @@ section {
       font-weight: 700;
     }
 
-#s1 h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 300;
-    color:#555;
-}
 #s2 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
