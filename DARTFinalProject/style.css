@@ -14,7 +14,7 @@
     align-items: center;
     padding: 40px;
     font-family: 'Roboto', sans-serif;
-    transition: 1s;
+    transition: 0.3s;
 }
 #s1:hover {
   background-color: #6D7CB4;
