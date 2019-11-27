@@ -1,17 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* === WELCOME SCREEN === */
+#s1 {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
 
+#greeting {
+  text-align: center;
+  transition: 0.3s;
+}
+#greeting:hover {
+  font-size:90px;
+  color: #6D7CB4;
+  transition: 0.7s;
+}
+
+.help {
+  font-size: 60px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.help:hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+/* === SECTION 1 === */
 .parent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 3fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 4fr;
   grid-gap: 10px;
   background-color: #fff;
-  border: 1px solid red;
   height: 100vh;
 
   padding: 4%;
@@ -25,7 +58,8 @@ article {
   font-size: 4vmax;
 }
  .a1 {
-   grid-column: 1 / 3;
+   font-size: 20px;
+   grid-column: 1/ 4;
    grid-row: 1 / 2;
    background: crimson;
  }
