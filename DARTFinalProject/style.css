@@ -14,37 +14,44 @@
     align-items: center;
     padding: 40px;
     font-family: 'Roboto', sans-serif;
-    transition: 0.3s;
+    opacity: 0;
+    transition: 0.7s;
 }
 #s1:hover {
-  background-color: #6D7CB4;
+
+  background: url(../images/stress.jpg) no-repeat center center;
+  opacity: 1;
   transition: 1s;
-  color: white;
 
 }
 
 #greeting {
   font-size: 40px;
   text-align: center;
+  color: white;
   transition: 0.3s;
 }
 
 .help {
   font-size: 90px;
+  border-radius: 5px;
   text-align: center;
   opacity: 0;
+  margin-top: 5vh;
   transition: 0.3s;
+  padding: 15px;
 }
 
 .help:hover {
+  border-radius: 5px;
   opacity: 1;
   animation: shake 0.4s;
   animation-iteration-count: infinite;
-  transition: 0.7s;
   border-style: solid;
   border-radius: 10px;
   border-color: white;
-
+  color: white;
+  transition: 0.7s;
 }
 
 .scrolling {
@@ -55,38 +62,51 @@
 }
 .scrolling:hover {
   opacity: 1;
+  color: white;
   transition: 0.7s;
 }
 /* === SECTION 1 === */
 .parent {
-  display: flex;
-  height: 60vh;
-  padding: 20px;
-  background-color: #C13033;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50vh;
+  height: 23vh;
+
 }
 
 article {
-  border-radius: 5px;
-  padding: 20px;
   font-size: 4vmax;
 }
-
 .a1 {
-  padding-top: 30px;
-   padding: 150px;
+  color: white;
+  padding: 40px;
+  padding-top: 80px;
+  font-family: 'Roboto', sans-serif;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #C13033;
+}
+.a2 {
+  background-color: #C13033;
+   padding: 30px;
+   padding-top: 70px;
+   grid-column: 2/4;
+   grid-row:1;
+   color: white;
    font-family: 'Quicksand', sans-serif;
-   flex-grow: 1;
    font-size: 20px;
-   opacity: 0;
-   transition: 0.7s;
  }
 
-.a1:hover {
-  color: white;
-  opacity: 1;
-  animation: shake 0.3s;
-  transition: 0.3s;
+
+/* === SECTION 2 === */
+
+#chart {
+  grid-column: 1/4;
+  grid-row: 3;
+  height: 100vh;
+
 }
+
 /* === To enable text/image shaking === */
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
