@@ -67,45 +67,49 @@
 }
 /* === SECTION 1 === */
 .parent {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 50vh;
+  display: flex;
   height: 23vh;
 
 }
 
 article {
   font-size: 4vmax;
+  height:
 }
 .a1 {
   color: white;
   padding: 40px;
-  padding-top: 80px;
+  padding-top: 40px;
   font-family: 'Roboto', sans-serif;
-  grid-column: 1;
-  grid-row: 1;
   background-color: #C13033;
+  height: 42vh;
 }
 .a2 {
   background-color: #C13033;
    padding: 30px;
    padding-top: 70px;
-   grid-column: 2/4;
-   grid-row:1;
+   align-items: center;
    color: white;
    font-family: 'Quicksand', sans-serif;
    font-size: 20px;
+   height: 42vh;
  }
 
 
 /* === SECTION 2 === */
 
-#chart {
-  grid-column: 1/4;
-  grid-row: 3;
-  height: 100vh;
+#s2 {
+    height: 120vh;
+    background: url(../images/chart.png) no-repeat fixed center center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 
-}
+/* === SECTION 3 === */
+
+
 
 /* === MEDIA QUERIES === */
 
