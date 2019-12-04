@@ -19,14 +19,14 @@
 }
 #s1:hover {
 
-  background: url(../images/stress.jpg) no-repeat center center;
+  background: url(../images/stress.png) no-repeat center center;
   opacity: 1;
   transition: 1s;
 
 }
 
 #greeting {
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   color: white;
   transition: 0.3s;
@@ -105,6 +105,15 @@ article {
   grid-row: 3;
   height: 100vh;
 
+}
+
+/* === MEDIA QUERIES === */
+
+@media only screen and (min-width: 600px) {
+
+#chart {
+  height: 20vh;
+}
 }
 
 /* === To enable text/image shaking === */
