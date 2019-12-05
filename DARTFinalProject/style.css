@@ -182,6 +182,7 @@ article {
 /* === SECTION 4 === */
 #negative {
   text-align: center;
+  color: black;
   background-color: white;
   height: 10vh;
   font-size: 13px;
