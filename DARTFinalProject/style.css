@@ -191,7 +191,9 @@ a #negative {
   text-decoration: none;
   color: black;
   font-family: 'Roboto', sans-serif;
-  width: 200vh;
+  width: 100vh;
+  margin-left: 25%;
+
 }
 
 #negative:hover {
