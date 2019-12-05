@@ -1,0 +1,106 @@
+/*CSS RESET*/
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family:gotham, helvetica, verdana, sans-serif;
+}
+
+#blue {
+    background-color: cadetblue;
+}
+
+#grey {
+    background-color:#333;
+    color:#fff;
+}
+
+header {
+    background-color: green;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 72px;
+}
+
+header h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-style:italic;
+    color:#fff;
+    text-transform: capitalize;
+}
+
+
+nav {
+    background: url(../images/cattexture.jpg) repeat;
+}
+
+nav a:link {
+    padding:20px;
+    display:inline-block;
+    color:#fff;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: aqua;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color:#333;
+}
+nav a:active {
+    background-color: crimson;
+    color:#333;
+}
+
+article {
+    padding:20px;
+}
+
+article h1 {
+    font-size: 38px;
+    text-transform: capitalize;
+}
+
+article img {
+    /*responsive image*/
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.float-left {
+    width:256px;
+    float:left;
+    margin-right:20px;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.red {
+    color:crimson;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    background-color: #eee;
+    border-left: solid 40px #333;
+    padding: 20px;
+    margin:40px 100px;
+
+}
+
+footer {
+    background: url(../images/cattexture.jpg) repeat;
+    color:#fff;
+    padding:20px;
+}
