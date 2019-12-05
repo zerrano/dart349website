@@ -23,6 +23,7 @@ a:visited {
   padding: 40px;
   font-family: 'Roboto', sans-serif;
   background: url(images/stress.png) no-repeat center center fixed;
+  background-size: cover;
   opacity: 1;
   transition: 1s;
 }
@@ -102,15 +103,53 @@ article {
 }
 
 /* === SECTION 2 === */
-#s2 {
+
+.mentalhealthBox{
+  display: flex;
+  height: 100vh;
   height: 150vh;
   background: url(images/chart.png) no-repeat fixed;
   background-size: cover;
 }
 
-#empty {
-  height: 150vh;
-  width: 60%;
+.pictureleft{
+  width: 65%;
+  height: 100vh;
+
+}
+
+.buttonright{
+  width: 35%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50%;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 25px;
+  color: white;
+  background-color: #FD871F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  opacity: 0.5;
+  font-weight: normal;
+  transition: 0.8s;
+}
+
+.button:hover {
+  background-color: #C13033;
+  opacity: 1;
+  font-weight: bold;
 }
 /* === SECTION 3 === */
 #s3 {
@@ -127,7 +166,7 @@ article {
   color: white;
   font-size: 60px;
   padding: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: 'Roboto', sans-serif;
   background-color: #C13033;
 }
@@ -138,6 +177,7 @@ article {
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
+  max-width: 65%;
 }
 
 /* === SECTION 4 === */
