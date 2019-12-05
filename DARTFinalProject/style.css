@@ -14,16 +14,11 @@
     align-items: center;
     padding: 40px;
     font-family: 'Roboto', sans-serif;
-    opacity: 0;
-    transition: 0.7s;
+    background: url(../images/stress.png) no-repeat center center;
+    opacity: 1;
+    transition: 1s;
 }
-#s1:hover {
 
-  background: url(../images/stress.png) no-repeat center center;
-  opacity: 1;
-  transition: 1s;
-
-}
 
 #greeting {
   font-size: 50px;
@@ -99,17 +94,41 @@ article {
 /* === SECTION 2 === */
 
 #s2 {
-    height: 120vh;
-    background: url(../images/chart.png) no-repeat fixed center center;
+    height: 150vh;
+    background: url(../images/chart.png) no-repeat fixed;
     background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
 }
 /* === SECTION 3 === */
 
+#s3 {
+  background-color: #C13033;
+  padding: 30px;
+  font-family: 'Quicksand', sans-serif;
+  height: 70vh;
+  align-items: center;
+  color: white;
+  display: flex;
+}
 
+#whystudents {
+  color: white;
+  font-size: 60px;
+  padding: 20px;
+  padding-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #C13033;
+  height: 70vh;
+}
+
+#whystudents2 {
+  background-color: #C13033;
+   padding: 30px;
+   align-items: center;
+   color: white;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 18px;
+   height: 70vh;
+}
 
 /* === MEDIA QUERIES === */
 
