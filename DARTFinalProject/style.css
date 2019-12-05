@@ -187,7 +187,7 @@ article {
   font-size: 13px;
 }
 
-a #negative {
+#negative a{
   text-decoration: none;
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -201,7 +201,7 @@ a #negative {
 }
 
 #negative h1{
-  padding-top: 25px;
+  padding-top: 15px;
   opacity: 1;
   transition: 1s;
 }
