@@ -188,6 +188,10 @@ article {
   font-size: 13px;
 }
 
+#workscited {
+  color: black;
+}
+
 #negative a{
   text-decoration: none;
   color: black;
