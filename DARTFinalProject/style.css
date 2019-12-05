@@ -8,23 +8,21 @@
 
 /* === WELCOME SCREEN === */
 #s1 {
-    height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    font-family: 'Roboto', sans-serif;
-    background: url(../images/stress.png) no-repeat center center;
-    opacity: 1;
-    transition: 1s;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+  background: url(../images/stress.png) no-repeat center center;
+  opacity: 1;
+  transition: 1s;
 }
-
 
 #greeting {
   font-size: 50px;
   text-align: center;
   color: white;
-  transition: 0.3s;
 }
 
 .help {
@@ -55,22 +53,23 @@
   opacity: 0;
   transition: 0.3s;
 }
+
 .scrolling:hover {
   opacity: 1;
   color: white;
   transition: 0.7s;
 }
+
 /* === SECTION 1 === */
 .parent {
   display: flex;
   height: 23vh;
-
 }
 
 article {
   font-size: 4vmax;
-  height:
 }
+
 .a1 {
   color: white;
   padding: 40px;
@@ -79,32 +78,31 @@ article {
   background-color: #C13033;
   height: 42vh;
 }
+
 .a2 {
   background-color: #C13033;
-   padding: 30px;
-   padding-top: 70px;
-   align-items: center;
-   color: white;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 20px;
-   height: 42vh;
- }
-
+  padding: 30px;
+  padding-top: 70px;
+  align-items: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  height: 42vh;
+}
 
 /* === SECTION 2 === */
-
 #s2 {
-    height: 150vh;
-    background: url(../images/chart.png) no-repeat fixed;
-    background-size: cover;
+  height: 150vh;
+  background: url(../images/chart.png) no-repeat fixed;
+  background-size: cover;
 }
-/* === SECTION 3 === */
 
+/* === SECTION 3 === */
 #s3 {
   background-color: #C13033;
   padding: 30px;
   font-family: 'Quicksand', sans-serif;
-  height: 70vh;
+  height: 60vh;
   align-items: center;
   color: white;
   display: flex;
@@ -117,39 +115,88 @@ article {
   padding-top: 40px;
   font-family: 'Roboto', sans-serif;
   background-color: #C13033;
-  height: 70vh;
 }
 
 #whystudents2 {
+  padding: 30px;
+  align-items: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
+/* === SECTION 4 === */
+#negative {
+  text-align: center;
   background-color: #C13033;
-   padding: 30px;
-   align-items: center;
-   color: white;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 18px;
-   height: 70vh;
+  height: 20vh;
+}
+
+#negative a {
+  text-decoration: none;
+}
+
+#negative h1{
+  padding-top: 30px;
+}
+
+#negative h1 a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#negative:hover {
+  background-color: #FD871F;
+  color: black;
+  transition: 1s;
 }
 
 /* === MEDIA QUERIES === */
-
-@media only screen and (min-width: 600px) {
-
-#chart {
-  height: 20vh;
-}
-}
+@media only screen and (min-width: 600px) {}
 
 /* === To enable text/image shaking === */
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
