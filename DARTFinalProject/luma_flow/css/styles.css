@@ -1,0 +1,300 @@
+/* CSS Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* End of CSS Reset */
+
+/* Animation */
+#faded{
+       animation: fadeInAnimation ease 1.7s;
+       animation-iteration-count: 1;
+       animation-fill-mode: forwards;
+   }
+   @keyframes fadeInAnimation {
+       0% {
+           opacity: 0;
+       }
+       100% {
+           opacity: 1;
+       }
+   }
+/* end of Animation */
+
+/* Electronic Pigeon MediaQ */
+/* General CSS */
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: Roboto, san-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a, p{
+  font-family: Quicksand, sans-serif;
+}
+/* End of General CSS */
+
+
+
+/* classes */
+.mainContainer, .surveymainContainer, .trytomainContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.mainContainer{
+    height: 80%;
+}
+
+.surveyStart{
+  padding: 0 10% 0 10%;
+  height: 60%;
+}
+
+.surveymainContainer, .trytomainContainer{
+  height: 45vh;
+}
+
+
+.hruHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  text-align: center;
+}
+
+.hruButtons, .surveyButtons, .trytoBox, .resourcesBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.trytoBox, .resourcesBox{
+  padding: 60px 60px 40px 60px;
+  text-align: center;
+}
+
+.trytoBox{
+  color: white;
+  border: white 1px solid;
+}
+
+.resourcesBox{
+  color: black;
+  border: black 1px solid;
+}
+
+.trytoBox h1{
+  margin: 0 0 30px 0;
+}
+
+.trytoBox p{
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.surveyButtons{
+  flex-direction: row;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+
+  margin: 10px;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.dotActive, .dotInactive{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.dotInactive{
+  background-color: #bbb;
+  opacity: .5;
+}
+
+
+.goNext{
+  margin: 20px 0 0 0;
+}
+
+.goNext img{
+  width: 50px;
+  opacity: 0.5;
+}
+
+.goNext img:hover{
+  opacity: 1;
+}
+
+.h1Continue{
+  font-size: 50px;
+}
+
+.bodytext{
+  width: 80%;
+}
+
+.number{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text{
+  text-align: center;
+}
+
+/* Color Classes */
+.depressionColor{
+  background-color: #6d7cb4;
+}
+
+.anxietyColor{
+  background-color: #69a8ab;
+}
+
+.stressColor{
+  background-color: #cf8143;
+}
+
+.compColor1{
+  background-color: #81d8db;
+}
+
+.compColor2{
+  background-color: #f1d286;
+}
+
+.depressionColor, .anxietyColor, .stressColor{
+  opacity: .5;
+}
+
+.compColor1, .compColor2{
+  opacity: .85;
+}
+
+.extLink{
+  color: white;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*Note: Could create one selector, No need to add in background colors as property, but just incase */
+.depressionColor:hover {
+  background-color: #6d7cb4;
+  opacity: 1;
+}
+
+.anxietyColor:hover{
+  background-color: #69a8ab;
+  opacity: 1;
+}
+
+.stressColor:hover{
+  background-color: #cf8143;
+  opacity: 1;
+}
+
+.compColor1:hover{
+  background-color: #81d8db;
+  opacity: 1;
+}
+
+.compColor2:hover{
+  background-color: #f1d286;
+  opacity: 1;
+}
+
+.extLink:hover{
+  font-weight: bold;
+}
+/* End of Color Classes */
+
+
+/* End of classes */
+
+
+
+
+/* ids */
+
+/* End of ids */
+/* End of Electronic Pigeon MediaQ */
+
+
+/* BOOMER Camera MediaQ */
+@media screen and (min-width: 768px) {
+  .hruHeader{
+    width: 60%;
+  }
+
+  .hruButtons{
+    width: 40%;
+  }
+
+  .trytoBox{
+    width: 60%;
+  }
+}
+/* End of BOOMER Camera MediaQ */
+
+
+
+/* Plugged in Laptop MediaQ */
+@media screen and (min-width: 1200px) {
+  .mainContainer{
+    width: 70%;
+    height: 100%;
+  }
+
+  .surveymainContainer{
+    width: 40%;
+  }
+
+  .number{
+    font-size: 35px;
+  }
+
+  .text{
+    font-size: 19px;
+  }
+
+  .hruHeader{
+    width: 60%;
+  }
+
+  .hruButtons{
+    width: 40%;
+  }
+}
+/* End of Plugged in Laptop MediaQ */

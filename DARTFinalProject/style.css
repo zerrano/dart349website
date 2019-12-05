@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 /* === WELCOME SCREEN === */
 #s1 {
   height: 100vh;
@@ -134,21 +142,32 @@ article {
 
 #negative a {
   text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 #negative h1{
   padding-top: 30px;
 }
 
-#negative h1 a {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
 #negative:hover {
   background-color: #FD871F;
   color: black;
   transition: 1s;
+}
+
+/* === CITATIONS === */
+
+#citation {
+  background-color: #C13033;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+}
+
+#citation p {
+  text-align: left;
 }
 
 /* === MEDIA QUERIES === */
