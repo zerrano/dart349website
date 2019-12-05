@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    background: #fff;
+    display:flex;
+    box-shadow: 0 10px 6px rgba(0,0,0, .35)
+/*    border-bottom: solid 10px #333;*/
+}
+
+nav a:link {
+    padding:20px;
+    background: #fff;
+    color:#333;
+    text-decoration: none;
+    flex-grow:1;
+    text-align: center;
+}
+
+nav a:visited {
+    color:cadetblue;
+}
+
+nav a:hover {
+    background:#333;
+    color:#fff;
+}
+
+#hong {
+    width: 100%;
+    height: 70vh;
+    background: url(../images/bg1.jpg) fixed no-repeat center center;
+    background-size: cover;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding:40px;
+}
+
+#hong hgroup {
+    background:#fff;
+    padding: 20px;
+}
+
+
+.multi {
+    width:100%;
+}
+
+.multi article {
+    column-count: 3;
+    column-gap: 40px;
+    padding: 40px;
+}
+
+img {
+    width:100%;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+figure {
+    margin-bottom: 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color:#555;
+}
+
+#london {
+    width:100%;
+    min-height:100vh;
+    height: auto;
+    background:url(../images/bg2.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+}
+
+#london article {
+    background:#fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width:40%;
+}
+
+#london p {
+    margin:0;
+}
+
+.indent {
+    position: relative;
+    left:100px;
+    top:20px;
+}
+
+#urban {
+    width:100%;
+    min-height:100vh;
+    height: auto;
+    background:url(../images/bg3.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#urban article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    width:45%;
+}
+
+
+/* === SECONDARY PAGE CSS === */
+
+.sm_hero {
+    width: 100%;
+    min-height: 40vh;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding:40px;
+}
+
+.sm_hero h1 {
+    color:#fff;
+    font-size: 52px;
+}
+.sm_hero h2 {
+    color:#eee;
+    font-size: 22px;
+}
+
+#essay {
+   background:url(../images/bg4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#wire {
+   background:url(../images/bg3.jpg) no-repeat center center;
+    background-size: cover;
+}
